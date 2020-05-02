@@ -1,0 +1,139 @@
+<html>
+
+
+<script src="js/viewportchecker.js"></script>
+
+<script src="js/jquery-2.1.1.js"></script>
+<script src="js/links.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<link rel="stylesheet" href="css/wellcome.css" /> <!-- CSS reset -->
+<meta name="viewport" content="width=device-width" />
+
+<script>
+
+
+function setps(){
+
+  var psc = document.getElementById('psi').value;
+
+  let date = new Date();
+  date.setMonth((date.getMonth()+1));
+  let eData = date.toUTCString();
+
+  document.cookie = "ps=" + psc + ";" + "expires="+eData+";" ;
+  document.cookie = "firstload=1" + ";" + "expires="+eData+";" ;
+
+  window.location.replace("./index.htm");
+}
+
+function setps2(){
+
+  var texts = document.getElementById('test');
+
+  texts.innerHTML = document.cookie;
+
+}
+
+function langfr(){
+
+  document.cookie = "lang=1" + ";" + "expires=Thu, 28 July 2019 18:00:00 UTC;";
+
+}
+
+function langen(){
+
+  document.cookie = "lang=0" + ";" + "expires=Thu, 28 July 2019 18:00:00 UTC;";
+
+}
+
+function nextlang(){document.getElementById('cookie_ac').style = 'visibility: hidden;opacity: 0;display:none;'; document.getElementById('lang_ac').style = 'visibility: visible;opacity: 1;'}
+function acceptckookies(){ document.getElementById('cookie_ac').style = 'visibility: visible;opacity: 1;';}
+function pseudomem(){document.getElementById('lang_ac').style = 'visibility: hidden;opacity: 0;display:none;';document.getElementById('psa_ac').style = 'visibility: visible;opacity: 1;';}
+
+
+function getCookie(cname) {
+  var name = cname + "=";
+  var decodedCookie = decodeURIComponent(document.cookie);
+  var ca = decodedCookie.split(';');
+  for(var i = 0; i < ca.length; i++) {
+    var c = ca[i];
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+    }
+  }
+  return "";
+}
+
+
+
+function firstloadfun() {
+
+  var texts = document.getElementById('test');
+
+  var fl = getCookie("firstload");
+
+  texts.innerHTML = fl;
+
+
+}
+</script>
+
+
+<title>GaumKap - Wellcome</title>
+
+
+
+<head></head>
+
+<body onload="acceptckookies()">
+
+  <div id="logo"><img src="im/logo.svg" width="300px" onmousedown="return false" onmousemove="return false"/></div>
+  <div id="text">Wellcome on labgaumkap.16mb.com</div>
+  <div id="text2" style="text-align:center;margin-left:auto;margin-right:auto;"> before start on labgaumkap.16mb.com i need element...</div><br/>
+
+
+  <div id="cookie_ac" >
+    GaumKap use cookies and javascript on this website you can read legacy and cookie <a href="cases/conditions.pdf">Here</a>
+    <br/>
+    Do you accept GaumKap use Cokkies ?<br/>
+    <button onclick="nextlang()">Yes</button>
+    <button>No</button>
+
+  </div>
+
+  <div id="lang_ac" >
+    Chosse your Language (this may usefull in future update)
+    <br/>
+    <br/>
+    <button onclick="langfr(), pseudomem()">french</button>
+    <button onclick="langen(), pseudomem()">english</button>
+
+  </div>
+  <div id="psa_ac" >
+    One more thing enter your pseudo (this may usefull in future update)
+    <br/>
+    <br/>
+
+
+    <input id="psi" type="text" value="Paul"><br>
+    <button onclick="setps()">Finish</button>
+
+
+
+  </div>
+
+
+
+
+</body>
+
+<footer>GaumKap Laboratory - 14.0 2018</footer>
+
+
+
+
+</html>

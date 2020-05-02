@@ -1,0 +1,59 @@
+
+<br/><br/>
+
+<link rel="stylesheet" href="css/uinf.css" />
+
+<div id="u_inf_title">Update 14.0</div>
+<div id="u_inf_date">08/10/18 5p.m GTM +1 Paris</div>
+<div id="u_inf_text">
+<br/><br/>
+What news?<br/>
+<br/>
+This update add many features on his core file (index + js file + css file)
+<br/><br/><br/>
+We start with hidden features:
+<br/><br/>
+- First labgaumkap.16mb.com have a new system file only in JavaScript language, this file
+Check many thing like time, click action, device used (IOS, PC, Android, …), etc...
+<br/>
+- Have you read the first page wellcome.htm? I add an cookies reader like this <img />
+And now Labgaumkap can read cookies and verify if it is your first connection on labgaumkap.16mb.com
+In the future I’ll used cookies for other thing with my software or for this website (like language :) ), cookies removed/reloaded every 28 july
+<br/>
+- Delete useless files, fix htacces, and robot.txt file, gtag.js (Google analytics)
+<br/><br/><br/>
+Visible features:
+<br/><br/>
+- Show bar added, 4 news can be show, with buttons to change new (in future automatic change and side buttons)
+<br/>
+- About section updated and added in main page
+<br/>
+- twitter widget added
+<br/>
+- Tail Sprite Updated to mini tail animated (&copy;SEGA Sonic Mania Plus)
+<br/>
+- Top bar with back button, Update info button, dev zone button, conditions button,
+<br/>
+- Deviantart button added(I'm not an artist)
+<br/>
+- DevZone background changed
+<br/>
+- Main background changed
+<br/>
+- Wellcome.htm added
+<br/>
+- Tryole Logo Updated
+<br/>
+- Text in bottom removed
+<br/>
+- game page removed (software section added but empty now i need fix something)
+<br/>
+- Conditions.pdf added
+
+
+
+</div>
+<div id="u_inf_fix"></div>
+
+
+<div id="u_inf_older"></div>

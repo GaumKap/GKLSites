@@ -1,0 +1,56 @@
+#logo{
+
+	text-align:center;
+	margin-right:auto;
+	margin-left:auto;
+	margin-top:;
+}
+
+#text{
+
+	font-size:22px;
+	font-family: 'Open Sans', sans-serif;
+	text-align:center;
+	margin-right:auto;
+	margin-left:auto;
+	margin-top:50px;
+}
+
+footer{
+
+	position:absolute;
+	bottom:0;
+	width:99%;
+	height:30px;   /* Height of the footer */
+	text-align:right;
+}
+
+#lang_ac{
+
+	visibility: hidden;
+	opacity: 0;
+	transition: visibility 0s, opacity 0.5s linear;
+	text-align:center;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#psa_ac{
+
+	visibility: hidden;
+	opacity: 0;
+	transition: visibility 0s, opacity 0.5s linear;
+	text-align:center;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#cookie_ac{
+
+	visibility: hidden;
+	opacity: 0;
+	transition: visibility 0s, opacity 0.5s linear;
+	text-align:center;
+	margin-left:auto;
+	margin-right:auto;
+}

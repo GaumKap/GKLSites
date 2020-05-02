@@ -1,0 +1,14 @@
+User-agent: *
+Disallow: /css/
+Disallow: /im/
+Disallow: /js/
+Disallow: /m/
+Disallow: /packy/
+Disallow: /video/
+Disallow: /data/
+Disallow: /er4/
+Disallow: /cases/
+Disallow: /doe/
+
+User-agent: Googlebot-Image
+Disallow: /*.svg

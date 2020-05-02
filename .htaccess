@@ -1,0 +1,33 @@
+#Protect .htaccess
+<Files .htaccess>
+order allow,deny
+deny from all
+</Files>
+
+
+
+#FreeScript
+AddDefaultCharset UTF-8
+<IfDefine !Free>
+<IfModule  mod_headers.c>
+Header set Cache-Control "private, max-age=0, must-revalidate"
+Header set X-UA-Compatible "IE=8; IE=9; IE=10"
+</IfModule>
+</IfDefine>
+
+
+
+#FreeScript
+AddType video/ogg .ogg
+AddType application/exe .exe
+AddType video/ogg .ogv
+AddType video/mp4 .mp4
+AddType video/mp4 .m4v
+AddType video/mp4 .mov
+AddType video/webm .webm
+
+
+ErrorDocument 404 http://tryolegroup.16mb.com/
+ErrorDocument 403 http://tryolegroup.16mb.com/
+
+Options -Indexes
