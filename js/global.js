@@ -22,8 +22,8 @@ async function firstloadfun() {
   var lsb = 1;
   var sbbnu_v = 1;
   var firstload = getCookie("firstload");
-  if (firstload != '1'){ window.location.replace("./wellcome.htm");}else{window.lobir();}
-
+  //if (firstload != '1'){ window.location.replace("./wellcome.htm");}else{window.lobir();}
+  window.lobir();
 }
 
 //lobir is an function run multiple mods onload
